@@ -1,0 +1,38 @@
+.orderSuccess{
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    height: 50vh;
+    justify-content: center;
+    padding: 10vmax;
+
+}
+.orderSuccess>svg{
+    color: tomato;
+    font-size: 5vmax;
+}
+.orderSuccess>p{
+    font-size: 2vmax;
+
+}
+.orderSuccess>a{
+    margin-top: 2vmax;
+    background-color: rgb(61, 55, 55);
+    color: white;
+    transition: all 0.5s;
+    text-decoration: none;
+    padding: 1vmax 3vmax;
+    border-radius: 45px;
+    cursor: pointer;
+}
+.orderSuccess>a:hover{
+    background-color:rgba(0, 0, 0, 0.459);
+}
+
+@media screen and (max-Width:600px) {
+    
+    
+    
+}

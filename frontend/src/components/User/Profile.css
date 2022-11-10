@@ -1,0 +1,116 @@
+.profileContainer{
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    top: 0%;
+    left: 0%;
+    max-width: 100%;
+    background-color: white;
+}
+.profileContainer>div{
+    display: flex;
+    height: 100vh;
+    max-width: 100%;
+    width: 100vw;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.profileContainer>div:first-child>h1{
+    color: rgba(0, 0, 0, 0.575);
+    font: 500 2.2vmax "Roboto";
+    transform: translateX(-10vmax) translateY(-2vmax);
+}
+.profileContainer>div:first-child>img{
+    width: 20vmax;
+    border-radius: 100%;
+    transition: all 0.5s;
+
+}
+.profileContainer>div:first-child>img:hover{
+    width: 25vmax;
+}
+.profileContainer>div:first-child>a{
+    border: none;
+    background-color: tomato;
+    font:400 1vmax "Roboto";
+    color:white;
+    margin: 4vmax;
+    text-align: center;
+    transition: all 0.5s;
+    width:30%;
+    padding:0.5vmax;
+    text-decoration: none;
+}
+.profileContainer>div:first-child>a:hover{
+    background-color: red;
+}
+.profileContainer>div:last-child{
+    justify-content: space-evenly;
+    box-sizing: border-box;
+    padding: 5vmax;
+    align-items: flex-start;
+}
+.profileContainer>div:last-child>div>h4{
+    color: black;
+    font: 400 1.2vmax "Roboto";
+
+}
+.profileContainer>div:last-child>div>p{
+    color: rgba(0, 0, 0, 0.555);
+    font: 400 1vmax cursive;
+    margin: 0.2vmax;
+
+}
+.profileContainer>div:last-child>div:last-child{
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+}
+.profileContainer>div:last-child>div:last-child>a{
+    border: none;
+    background-color: rgb(55, 48, 46);
+    font:400 1vmax "Roboto";
+    color:white;
+   margin: 2vmax;
+    text-align: center;
+    transition: all 0.5s;
+    padding:0.5vmax;
+    text-decoration: none;
+}
+.profileContainer>div:last-child>div:last-child>a:hover{
+    background-color: red; 
+}
+
+@media screen and (max-width:600px) {
+    .profileContainer{
+        flex-direction: column;
+    }
+    .profileContainer>div:first-child>h1{
+        font: 500 4.2vmax "Roboto";
+        transform: translateX(0) translateY(-2vmax);
+    }
+    .profileContainer>div:first-child>img{
+        width:18vmax;
+        height:18vmax;
+    }
+    .profileContainer>div:first-child>a{
+        font:400 2vmax "Roboto"; 
+    }
+    .profileContainer>div:last-child{
+        
+        align-items: center;
+    }
+    .profileContainer>div:last-child>div>h4{
+        justify-content: center;
+        display: flex;
+        font-size: 2.2vmax;
+    }
+    .profileContainer>div:last-child>div>p{
+        font-size: 2vmax;
+    }
+    .profileContainer>div:last-child>div:last-child>a{
+        font-size: 2vmax;
+    }
+
+}
